@@ -1,3 +1,8 @@
+"""
+Created on Sun Dec 24 09:00:27 2017
+
+@author: lishuo
+"""
 from selenium import webdriver
 from credentials import username, password
 from selenium.common.exceptions import TimeoutException

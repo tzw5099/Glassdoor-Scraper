@@ -1,3 +1,8 @@
+"""
+Created on Sun Dec 24 09:00:27 2017
+
+@author: lishuo
+"""
 from bs4 import BeautifulSoup
 import pandas as pd
 
