@@ -6,8 +6,8 @@ Created on Sun Dec 24 09:00:27 2017
 from session import GlassdoorSession
 
 config = {
-    'Microsoft':'https://www.glassdoor.com/Reviews/Microsoft-Reviews-E1651.htm',
-    'Google':'https://www.glassdoor.com/Reviews/Google-Reviews-E9079.htm'
+    'Microsoft':('https://www.glassdoor.com/Reviews/Microsoft-Reviews-E1651.htm', 10),
+    'Google':('https://www.glassdoor.com/Reviews/Google-Reviews-E9079.htm', 10)
 }
 
 if __name__=='__main__':

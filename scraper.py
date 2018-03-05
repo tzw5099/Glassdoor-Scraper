@@ -16,20 +16,18 @@ class Scraper:
 class GlassdoorReviewScraper(Scraper):
     
     config    = None
-    pages     = None
     columns   = None
     
-    def __init__(self, browser, config, pages=10):
+    def __init__(self, browser, config):
         self.browser = browser
         self.config = config
-        self.pages = pages
         self.columns = ['company', 'stars', 'date']
         
     def scrape(self):
         dfs = []
         
-        for company, start_url in self.config.items():
-            for i in range(1, self.pages+1):
+        for company, (start_url, pages) in self.config.items():
+            for i in range(1, pages+1):
                 reviews = self.get_reviews(start_url, i)
                 dfs.append(self.parse_reviews(company, reviews))
             
